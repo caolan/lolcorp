@@ -1,0 +1,24 @@
+#welcome {
+    font-size: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: auto;
+}
+#welcome span {
+    position: relative;
+    top: 4px;
+    color: lightblue;
+    text-shadow: blue -4px 4px 0;
+    transition: all 0.2s ease-out;
+}
+#welcome span:hover {
+    top: 8px;
+}
+#welcome span.alt {
+    top: -4px;
+    color: lightgreen;
+    text-shadow: green -4px 4px 0;
+}
+#welcome span.alt:hover {
+    top: 0px;
+}
