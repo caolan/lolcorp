@@ -1,0 +1,31 @@
+* LOLCorp's amazing software
+This repository contains some example Node.js applications with
+deliberate security holes. We're using them to demonstrate basic
+security practices.
+
+** Before you start
+You'll need to install [[https://nodejs.org/en/][Node.js]]. These applications were written with
+Node v8.4.0, but older versions should still work.
+
+** To run an application
+Note that all the applications have security holes, so you might want
+to run them inside a virtual machine if opening them up to a network.
+By default the web-servers are accessible on 127.0.0.1 only, so should
+only be accessible from your own machine.
+
+First change into the application directory and install it's
+dependencies:
+
+#+BEGIN_SRC shell
+  cd 01-notebook/
+  npm install
+#+END_SRC
+
+Then, run the application using node:
+
+#+BEGIN_SRC shell
+  node server.js
+#+END_SRC
+
+You should see a message saying the server is available at
+[[http://127.0.0.1:8080/][http://127.0.0.1:8080/]].
